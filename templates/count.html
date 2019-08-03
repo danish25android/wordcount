@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+GO to Home Page <a href="{% url 'home' %}">Click here</a>
+<h1>Welcome to count page</h1>
+<br>
+
+{{ Full_data }}<br>
+
+<h1>Word Counting</h1>
+
+{% for word,value in counter %}
+
+    {{ word }} = {{ value }} <br>
+
+{% endfor %}
+
+</body>
+</html>
